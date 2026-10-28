@@ -6,10 +6,24 @@ from word2number import w2n
 import sys
 
 start_message=input("welcome to my inventory program if you want to enter type enter and if you want to exit type exit")
+if start_message=="enter":
+    print("welcome to my inventory program")
+while start_message!="enter":
+    print("wrong command")
+
+    start_message=input("welcome to my inventory program")
+    if start_message=="exit":
+        break
+while not start_message:
+      start_message=input("whoops wrong command try again?")
 if start_message=="exit":
     print("goodbye")
     sys.exit(0)
-name=input("enter your name")
+name=input("enter your name?")
+
+while not name:
+    print("Try again!")
+    name=input("enter your name?")
 print("welcome ",name)
 items=["cups", "lids", "plates"]
 quanities=[0,0,0]
