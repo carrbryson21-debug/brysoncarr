@@ -1,6 +1,4 @@
-#goal is to make a really cool project date late did 10/26/2026
-# goal 1 reached of making it reads word numbers as numbers 10/27/2026
-#tommorws goal to handle input validation and make sure it will try again if they type random things 10/28/2026
+
 import sys
 from word2number import w2n
 import sys
